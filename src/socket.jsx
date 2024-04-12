@@ -7,7 +7,7 @@ const getSocket = () => useContext(SocketContext);
 
 const SocketProvider = ({ children }) => {
   const socket = useMemo(
-    () => io("http://localhost:3000", { withCredentials: true }),
+    () => io("https://chat-app-xu7d.onrender.com", { withCredentials: true }),
     []
   );
   return (
